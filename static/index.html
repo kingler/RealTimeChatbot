@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Chatbot WebApp</title>
+
+</head>
+<body>
+    <div id="magickModal" style="display: none;" class="magick-modal">
+        <div class="magick-content">
+            <h2>Magick Options</h2>
+            <div class="options-grid">
+                <button id="resetBtn" class="reset-btn" title="Clear chat history and start a new conversation">Reset</button>
+                <button id="option2">Option 2</button>
+                <button id="option3">Option 3</button>
+                <button id="option4">Option 4</button>
+                <button id="option5">Option 5</button>
+                <button id="option6">Option 6</button>
+            </div>
+            
+        </div>
+    </div>
+      
+   
+
+    <button class="sidebar-toggle">&#9776;</button>
+    
+    <div class="sidebar">
+    
+    <form class="api-key-form">
+        
+
+        <label for="api-key">API Key:</label>
+        <input type="password" id="api-key" name="api-key" placeholder="Enter API Key">
+        <button class="api-key-submit" type="submit">Save</button>
+        <!-- add a link that says OpenAI API keys link font 12-->
+        <a href="https://platform.openai.com/account/api-keys" target="_blank">link to OpenAI API keys</a>
+            
+    </form>
+    <div class="social-icons">
+        <!-- center the thumbnails on the side panel -->
+        <a href="https://www.patreon.com/echohive42" target="_blank">
+            <img src="./patreon.png" alt="Patreon" width="200">            
+        </a>
+        <br/>
+        <a href="https://www.youtube.com/@echohive" target="_blank">
+            <img src="./youtube.jpg" alt="YouTube" width="150">
+        </a>
+        <br/>
+        <a href="https://discord.gg/PPxTP3Cs3G" target="_blank">
+            <img src="./discord.png" alt="Discord" width="150">
+        </a>
+        <br/>
+        <a href="https://twitter.com/hive_echo" target="_blank">
+            <img src="./Twitter.jpeg" alt="Twitter" width="150">
+        </a>
+        <br/>
+        <a href="https://www.patreon.com/echohive42" target="_blank">
+            <img class="echo" src="./echo.png" alt="Echo logo" width="200">            
+        </a>
+        
+    </div>
+</div>
+
+    <div class="chat-container">
+        <div class="chat-content"></div>
+        <form class="input-form">
+            <textarea class="input-box"  placeholder="Enter your text here..."></textarea>
+            <div class="button-container">
+                <button class="submit-btn">Submit</button>
+                <!-- <button class="stop-btn">Stop</button> -->
+              </div>
+
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./reconnecting-websocket.min.js"></script>
+    
+    <script src="./script.js"></script>
+   
+
+</body>
+</html>
